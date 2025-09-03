@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="imc.js"></script>
+    <title>Cálculo de IMC</title>
+</head>
+<body>
+    <h1>Cálculo de IMC</h1>
+    
+    <div class="calculadora">
+        <div class="mulher-container">
+            <img src="/home/jonatas/Área de trabalho/frontEnd senai/pagina calculo imc/img/abcd.png" alt="mulher">
+            <label for="mulher-checkbox">Mulher</label>
+            <input type="checkbox" id="mulher-checkbox" name="genero" value="mulher">
+        </div>
+
+        <div class="homem-container">
+            <img src="/home/jonatas/Área de trabalho/frontEnd senai/pagina calculo imc/img/haabcd.png" alt="homem">
+            <label for="homem-checkbox">Homem</label>
+            <input type="checkbox" id="homem-checkbox" name="genero" value="homem">
+        </div>
+
+        <div class="info-container">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" step="any"><br>
+            
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" name="altura" step="any"><br>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="0"><br>
+        </div>
+
+        <button onclick="calcularIMC()">Calcular IMC</button>
+        
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
